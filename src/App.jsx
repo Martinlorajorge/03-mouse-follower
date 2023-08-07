@@ -5,7 +5,7 @@ function App() {
 	const [position, setPosition] = useState({ x: 0, y: 0 });
 
 	useEffect(() => {
-		console.log("efecto", { enabled });
+		// console.log("efecto", { enabled });
 		const handleMove = event => {
 			const { clientX, clientY } = event;
 			setPosition({ x: clientX, y: clientY });
