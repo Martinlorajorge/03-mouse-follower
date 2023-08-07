@@ -16,6 +16,8 @@ function App() {
 			window.addEventListener("pointermove", handleMove);
 		}
 
+		//cleanup
+		//--> cuando el componente se desmonta funciona
 		return () => {
 			//Limpia bien el evento
 			window.removeEventListener("pointermove", handleMove);
